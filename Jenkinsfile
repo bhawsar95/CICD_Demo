@@ -14,7 +14,7 @@ pipeline {
 
                     // Log in to Docker Hub using an access token
                     withCredentials([string(credentialsId: 'docker-cred', variable: 'DOCKER_ACCESS_TOKEN')]) {
-                        sh "docker login -u YOUR_DOCKER_USERNAME -p ${DOCKER_ACCESS_TOKEN}"
+                        sh "docker login -u bhawsarshubham95 -p ${dckr_pat_RoEUUmoJFz_fO1mJnmIw0-QaZww}"
                     }
 
                     // Push the Docker image
